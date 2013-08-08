@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LoveCalculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="your_name">Your Name</string>
+    <string name="partner_name">Partner Name</string>
+    <string name="calculate">Get Love %</string>
+    <string name="your_name_hint">Romeo</string>
+    <string name="partner_name_hint">Juliet</string>
+    <string name="percentage_text_1">The relationship between </string>
+    <string name="percentage_text_2">and </string>
+    <string name="percentage_text_3">has a success rating of: </string>
+</resources>

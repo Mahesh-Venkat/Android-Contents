@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewYourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="77dp"
+        android:text="@string/your_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewPartnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewYourName"
+        android:layout_below="@+id/textViewYourName"
+        android:layout_marginTop="57dp"
+        android:text="@string/partner_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextYourName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewYourName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="@string/your_name_hint"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences|textPersonName|textNoSuggestions"
+        android:paddingLeft="170dp" />
+
+    <EditText
+        android:id="@+id/editTextPartnerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextYourName"
+        android:layout_alignTop="@+id/textViewPartnerName"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:imeOptions="actionDone"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="170dp"
+        android:hint="@string/partner_name_hint"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPartnerName"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="91dp"
+        android:layout_toRightOf="@+id/textViewPartnerName"
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/textViewPercentageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewPartnerName"
+        android:layout_below="@+id/buttonCalculate"
+        android:layout_marginTop="118dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewPercentageTextValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewPercentageText"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/textViewPartnerName"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
